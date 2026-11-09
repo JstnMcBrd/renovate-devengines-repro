@@ -4,10 +4,10 @@
   "private": true,
   "description": "Reproduction: :pinAllExceptPeerDependencies pins devEngines ranges",
   "dependencies": {
-    "react": "^19.3.1"
+    "react": "19.3.1"
   },
   "devDependencies": {
-    "typescript": "^7.0.2"
+    "typescript": "7.0.2"
   },
   "peerDependencies": {
     "react-dom": "^19.3.1"
@@ -18,12 +18,12 @@
   "devEngines": {
     "runtime": {
       "name": "node",
-      "version": "^22.18.0 || >=24.0.0",
+      "version": "v26.13.0",
       "onFail": "error"
     },
     "packageManager": {
       "name": "npm",
-      "version": "^10.0.0 || ^11.0.0",
+      "version": "11.21.2",
       "onFail": "error"
     }
   }

@@ -12,9 +12,9 @@ Minimal reproduction for
 
 | Section                      | Value                   | Expected   | Actual     |
 | ---------------------------- | ----------------------- | ---------- | ---------- |
-| `dependencies`               | `react: ^18.2.0`        | pinned     | pinned     |
-| `devDependencies`            | `typescript: ^5.4.0`    | pinned     | pinned     |
-| `peerDependencies`           | `react-dom: ^18.2.0`    | range kept | range kept |
+| `dependencies`               | `react: ^19.3.1`        | pinned     | pinned     |
+| `devDependencies`            | `typescript: ^7.0.2`    | pinned     | pinned     |
+| `peerDependencies`           | `react-dom: ^19.3.1`    | range kept | range kept |
 | `engines`                    | `node: >=18.0.0`        | range kept | range kept |
 | `devEngines.runtime`         | `node: ^22.18.0 \|\| >=24.0.0` | range kept | **pinned** |
 | `devEngines.packageManager`  | `npm: ^10.0.0 \|\| ^11.0.0`   | range kept | **pinned** |
@@ -24,6 +24,10 @@ Minimal reproduction for
 Renovate's "Pin dependencies" PR pins `dependencies` and `devDependencies`
 and leaves `peerDependencies` and `engines` alone, but it also pins
 `devEngines.runtime` and `devEngines.packageManager` to a single version.
+
+See [#1](https://github.com/JstnMcBrd/renovate-devengines-repro/pull/1)
+for the "Pin dependencies" PR that Renovate opened in this repository, which
+pins both `devEngines` ranges.
 
 ## Expected behavior
 

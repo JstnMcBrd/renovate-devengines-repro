@@ -4,13 +4,13 @@
   "private": true,
   "description": "Reproduction: :pinAllExceptPeerDependencies pins devEngines ranges",
   "dependencies": {
-    "react": "^18.2.0"
+    "react": "^19.3.1"
   },
   "devDependencies": {
-    "typescript": "^5.4.0"
+    "typescript": "^7.0.2"
   },
   "peerDependencies": {
-    "react-dom": "^18.2.0"
+    "react-dom": "^19.3.1"
   },
   "engines": {
     "node": ">=18.0.0"

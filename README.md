@@ -15,7 +15,7 @@ Minimal reproduction for
 | `dependencies`               | `react: ^18.2.0`        | pinned     | pinned     |
 | `devDependencies`            | `typescript: ^5.4.0`    | pinned     | pinned     |
 | `peerDependencies`           | `react-dom: ^18.2.0`    | range kept | range kept |
-| `engines`                    | `node: ^22.18.0 \|\| >=24.0.0` | range kept | range kept |
+| `engines`                    | `node: >=18.0.0`        | range kept | range kept |
 | `devEngines.runtime`         | `node: ^22.18.0 \|\| >=24.0.0` | range kept | **pinned** |
 | `devEngines.packageManager`  | `npm: ^10.0.0 \|\| ^11.0.0`   | range kept | **pinned** |
 

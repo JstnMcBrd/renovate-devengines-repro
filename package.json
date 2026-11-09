@@ -1,0 +1,30 @@
+{
+  "name": "renovate-devengines-repro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reproduction: :pinAllExceptPeerDependencies pins devEngines ranges",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "peerDependencies": {
+    "react-dom": "^18.2.0"
+  },
+  "engines": {
+    "node": "^22.18.0 || >=24.0.0"
+  },
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^22.18.0 || >=24.0.0",
+      "onFail": "error"
+    },
+    "packageManager": {
+      "name": "npm",
+      "version": "^10.0.0 || ^11.0.0",
+      "onFail": "error"
+    }
+  }
+}
